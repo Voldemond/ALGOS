@@ -39,7 +39,7 @@ nav ul li {
 }
 
 #datetime {
-  margin-left: auto;
+  margin-inline: auto;
 }
 
 nav ul li a {
@@ -231,22 +231,5 @@ header {
   font-size: 25px;
   margin: 0;
   color: #333;
-}
-
-#like-btn {
-  margin: 20px;
-  padding: 10px 20px;
-  background-color: #2196f3;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-right: 10px;
-}
-
-#total-likes {
-  font-weight: bold;
-  color: #f00;
 }
 
