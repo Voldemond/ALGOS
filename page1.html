@@ -7,8 +7,6 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="styles1.css">
   <script src="script.js"></script>
-  
-
 </head>
 <body>
   <header>
@@ -21,29 +19,34 @@
     </ul>
   </nav>
   <main>
-    <pre id="code-container"></pre>
-
-    <div class="dropdown">
-      <button class="dropbtn">Arrays</button>
-      <div class="dropdown-content">
-        <button class="dropdown-item" onclick="displaySearchingCode()">Searching</button>
-        <button class="dropdown-item" onclick="displayTraversingCode()">Traversing</button>
-        <button class="dropdown-item" onclick="displaySortingCode()">Sorting</button>
+    <div class="container">
+      <div class="array-container">
+        <h2>Arrays</h2>
+        <div class="dropdown">
+          <button class="dropbtn">Arrays</button>
+          <div class="dropdown-content">
+            <button class="dropdown-item" onclick="displaySearchingCode()">Searching</button>
+            <button class="dropdown-item" onclick="displayTraversingCode()">Traversing</button>
+            <button class="dropdown-item" onclick="displaySortingCode()">Sorting</button>
+          </div>
+        </div>
+      </div>
+      <div class="linked-list-container">
+        <h2>Linked Lists</h2>
+        <div class="dropdown">
+          <button class="dropbtn">Linked Lists</button>
+          <div class="dropdown-content">
+            <button class="dropdown-item" onclick="displaySinglyLinkedListCode()">Singly Linked List</button>
+            <button class="dropdown-item" onclick="displayDoublyLinkedListCode()">Doubly Linked List</button>
+            <button class="dropdown-item" onclick="displayCircularLinkedListCode()">Circular Linked List</button>
+            <button class="dropdown-item" onclick="displaySearchingCode()">Searching</button>
+            <button class="dropdown-item" onclick="displayReversalCode()">Reversal</button>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="dropdown">
-      <button class="dropbtn">Linked Lists</button>
-      <div class="dropdown-content">
-        <button class="dropdown-item" onclick="displaySinglyLinkedListCode()">Singly Linked List</button>
-        <button class="dropdown-item" onclick="displayDoublyLinkedListCode()">Doubly Linked List</button>
-        <button class="dropdown-item" onclick="displayCircularLinkedListCode()">Circular Linked List</button>
-        <button class="dropdown-item" onclick="displaySearchingCode()">Searching</button>
-        <button class="dropdown-item" onclick="displayReversalCode()">Reversal</button>
-      </div>
-    </div>
+    <div id="code-container" class="code-container"></div>
   </main>
-  
   <script src="script.js"></script>
 </body>
 </html>
-
