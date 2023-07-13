@@ -3,30 +3,29 @@ body {
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
+ */
 }
-
 header {
   background-color: #333;
   color: #fff;
   padding: 20px;
   text-align: center;
 }
-
 h1 {
   margin: 0;
 }
-
 nav {
   background-color: #f9f9f9;
   padding: 10px;
 }
-
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex; /* Display the list horizontally */
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: center; /* Align items vertically */
 }
-
 nav ul li {
   display: inline-block;
   margin-right: 10px;
@@ -78,5 +77,120 @@ section {
   border-radius: 5px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
 
+.code-container {
+  margin-top: 20px;
+}
 
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown-content .dropdown-item {
+background-color: transparent;
+border: none;
+cursor: pointer;
+padding: 5px;
+display: block;
+width: 100%;
+text-align: left;
+}
+
+.dropdown-content .dropdown-item:hover {
+background-color: #f9f9f9;
+}
+.container {
+display: flex;
+flex-direction: column;
+align-items: justify;
+}
+
+.code-container {
+margin-top: 20px;
+border: 1px solid #ccc;
+padding: 10px;
+white-space: pre-wrap;
+font-family: monospace;
+background-color: #f9f9f9;
+}
+/* 
+dark mode */
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+.moon-symbol {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+body {
+  background-color: #222;
+  color: #fff;
+}
+
+header {
+  background-color: #333;
+}
+
+nav {
+  background-color: #444;
+}
+
+nav ul li a {
+  color: #fff;
+  background-color: #555;
+}
+
+nav ul li a:hover {
+  background-color: #777;
+}
+
+main {
+  background-color: #333;
+}
+
+h2 {
+  color: #fff;
+}
+
+p {
+  color: #ccc;
+}
+
+#introduction,
+#why-dsa {
+  background-color: #444;
+}
+
+.code-container {
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #555;
+}

@@ -1,0 +1,220 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  nav {
+    background-color: #f9f9f9;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #eee;
+  }
+  
+  nav ul li a:hover {
+    background-color: #ccc;
+  }
+  
+  nav ul li button {
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #eee;
+    border: none;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  nav ul li button:hover {
+    background-color: #ccc;
+  }
+  
+  main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  p {
+    margin-bottom: 15px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  #introduction {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #why-dsa {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  
+  .code-container {
+    margin-top: 20px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content .dropdown-item {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .dropdown-content .dropdown-item:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+  }
+  
+  .code-container {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    white-space: pre-wrap;
+    font-family: monospace;
+    background-color: #f9f9f9;
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  header.dark-mode {
+    background-color: #333;
+  }
+  
+  nav.dark-mode {
+    background-color: #444;
+  }
+  
+  nav ul li a.dark-mode {
+    color: #fff;
+    background-color: #555;
+  }
+  
+  nav ul li a.dark-mode:hover {
+    background-color: #777;
+  }
+  
+  nav ul li button.dark-mode {
+    color: #fff;
+    background-color: #555;
+  }
+  
+  nav ul li button.dark-mode:hover {
+    background-color: #777;
+  }
+  
+  main.dark-mode {
+    background-color: #333;
+  }
+  
+  h2.dark-mode {
+    color: #fff;
+  }
+  
+  p.dark-mode {
+    color: #ccc;
+  }
+  
+  #introduction.dark-mode,
+  #why-dsa.dark-mode {
+    background-color: #444;
+  }
+  
+  .code-container.dark-mode {
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #555;
+  }
+  
+  .moon-symbol {
+    margin-right: 5px;
+    font-size: 18px;
+  }
+  

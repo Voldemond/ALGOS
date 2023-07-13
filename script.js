@@ -47,16 +47,12 @@ document.addEventListener('DOMContentLoaded', function() {
             closeBtn.addEventListener('click', function() {
             codeContainer.textContent = '';
             });
+            // dark mode
+
 
           // Add more conditions for other data structures and their algorithms
         });
       }
     }
   });
-    
   
-
-
-
-
-
