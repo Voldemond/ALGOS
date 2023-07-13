@@ -7,6 +7,13 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="styles1.css">
   <script src="script.js"></script>
+  <script src="programs/searching.js"></script>
+  <script src="programs/stack.js"></script>
+  <script src="programs/queue.js"></script>
+  <script src="programs/priority-queues.js"></script>
+  <script src="programs/stack.js"></script>
+  <script src="programs/stack.js"></script>
+  <script src="programs/linked-list.js"></script>
 </head>
 <body>
   <header>
@@ -20,32 +27,62 @@
   </nav>
   <main>
     <div class="container">
-      <div class="array-container">
-        <h2>Arrays</h2>
+      <div class="data-structures-container">
+        <h2>Data Structures</h2>
         <div class="dropdown">
-          <button class="dropbtn">Arrays</button>
+          <button class="dropbtn">Data Structures</button>
           <div class="dropdown-content">
-            <button class="dropdown-item" onclick="displaySearchingCode()">Searching</button>
-            <button class="dropdown-item" onclick="displayTraversingCode()">Traversing</button>
-            <button class="dropdown-item" onclick="displaySortingCode()">Sorting</button>
+            <button class="dropdown-item" onclick="displayStackCode()">Stack</button>
+            <button class="dropdown-item" onclick="displayQueueCode()">Queue</button>
+            <button class="dropdown-item" onclick="displayPriorityQueueCode()">Priority Queue</button>
+            <button class="dropdown-item" onclick="displayLinkedListCode()">Linked List</button>
+            <button class="dropdown-item" onclick="displayDynamicArrayCode()">Dynamic Array</button>
+            <button class="dropdown-item" onclick="displayArrayListCode()">Array List</button>
+            <button class="dropdown-item" onclick="displayHashTableCode()">Hash Table</button>
+            <button class="dropdown-item" onclick="displayGraphsCode()">Graphs</button>
+            <button class="dropdown-item" onclick="displayBinarySearchTreeCode()">Binary Search Trees</button>
           </div>
         </div>
       </div>
-      <div class="linked-list-container">
-        <h2>Linked Lists</h2>
+      <div class="algorithms-container">
+        <h2>Algorithms and Searching Techniques</h2>
         <div class="dropdown">
-          <button class="dropbtn">Linked Lists</button>
+          <button class="dropbtn">Algorithms and Searching Techniques</button>
           <div class="dropdown-content">
-            <button class="dropdown-item" onclick="displaySinglyLinkedListCode()">Singly Linked List</button>
-            <button class="dropdown-item" onclick="displayDoublyLinkedListCode()">Doubly Linked List</button>
-            <button class="dropdown-item" onclick="displayCircularLinkedListCode()">Circular Linked List</button>
-            <button class="dropdown-item" onclick="displaySearchingCode()">Searching</button>
-            <button class="dropdown-item" onclick="displayReversalCode()">Reversal</button>
+            <button class="dropdown-item" onclick="displayLinearSearchCode()">Linear Search</button>
+            <button class="dropdown-item" onclick="displayBinarySearchCode()">Binary Search</button>
+            <button class="dropdown-item" onclick="displayInterpolationSearchCode()">Interpolation Search</button>
+            <button class="dropdown-item" onclick="displayRecursionCode()">Recursion</button>
+          </div>
+        </div>
+      </div>
+      <div class="sorting-algorithms-container">
+        <h2>Sorting Algorithms</h2>
+        <div class="dropdown">
+          <button class="dropbtn">Sorting Algorithms</button>
+          <div class="dropdown-content">
+            <button class="dropdown-item" onclick="displayBubbleSortCode()">Bubble Sort</button>
+            <button class="dropdown-item" onclick="displayMergeSortCode()">Merge Sort</button>
+            <button class="dropdown-item" onclick="displaySelectionSortCode()">Selection Sort</button>
+            <button class="dropdown-item" onclick="displayInsertionSortCode()">Insertion Sort</button>
+            <button class="dropdown-item" onclick="displayQuickSortCode()">Quick Sort</button>
+          </div>
+        </div>
+      </div>
+      <div class="traversal-techniques-container">
+        <h2>Traversal Techniques</h2>
+        <div class="dropdown">
+          <button class="dropbtn">Traversal Techniques</button>
+          <div class="dropdown-content">
+            <button class="dropdown-item" onclick="displayDepthFirstSearchCode()">Depth First Search (DFS)</button>
+            <button class="dropdown-item" onclick="displayBreadthFirstSearchCode()">Breadth First Search (BFS)</button>
+            <button class="dropdown-item" onclick="displayTreeTraversalCode()">Tree Traversal</button>
           </div>
         </div>
       </div>
     </div>
     <div id="code-container" class="code-container"></div>
+    
   </main>
   <script src="script.js"></script>
 </body>
