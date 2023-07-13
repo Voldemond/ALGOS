@@ -48,11 +48,48 @@ document.addEventListener('DOMContentLoaded', function() {
             codeContainer.textContent = '';
             });
             // dark mode
-
-
+            // Function to update the date and time
+            
           // Add more conditions for other data structures and their algorithms
         });
       }
     }
   });
   
+
+  // Get the like button and total likes element
+const likeButton = document.getElementById("like-btn");
+const totalLikesElement = document.getElementById("total-likes");
+
+// Check if the user has already liked
+let userHasLiked = localStorage.getItem("liked");
+
+// Initialize the total likes counter
+let totalLikes = parseInt(localStorage.getItem("totalLikes")) || 0;
+totalLikesElement.textContent = totalLikes;
+
+// Check if the user has already liked and disable the button
+if (userHasLiked) {
+  likeButton.disabled = true;
+}
+
+// Event listener for the like button
+likeButton.addEventListener("click", function () {
+  // Check if the user has already liked
+  if (!userHasLiked) {
+    // Increment the total likes
+    totalLikes++;
+    totalLikesElement.textContent = totalLikes;
+
+    // Disable the like button
+    likeButton.disabled = true;
+
+    // Set the user's liked status in localStorage
+    localStorage.setItem("liked", "true");
+
+    // Update the total likes in localStorage
+    localStorage.setItem("totalLikes", totalLikes.toString());
+  }
+});
+
+

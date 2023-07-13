@@ -10,8 +10,30 @@
 <body>
   
   <header>
+    <div class="logo">
+      <img src="images/algo.png" alt="ALGOS Logo">
+      <span class="logo-text">ALGOS</span>
+      <h1>ALGOS</h1>
+    </div>
     <h1>Data Structures performed by Kunal</h1>
+    <button id="like-btn">Like</button>
+  <p>Total Likes: <span id="total-likes">0</span></p>
+    <div id="datetime"></div>
   </header>
+  <script>
+    function updateDateTime() {
+      const datetimeElement = document.getElementById("datetime");
+      const now = new Date();
+      const date = now.toDateString();
+      const time = now.toLocaleTimeString();
+      // const seconds = now.getSeconds();
+      datetimeElement.textContent = `${date} ${time} `;
+    }
+  
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+  </script>
+  
   <nav>
     <ul>
       <li><a href="page1.html">Page 1</a></li>

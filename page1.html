@@ -17,12 +17,30 @@
 </head>
 <body>
   <header>
+    <div class="logo">
+      <img src="images/algo.png" alt="ALGOS Logo">
+      <span class="logo-text">ALGOS</span>
+      <h1>ALGOS</h1>
+    </div>
     <h1>Data Structures - Page 1</h1>
+    <div id="datetime"></div>
   </header>
+  <script>
+    function updateDateTime() {
+      const datetimeElement = document.getElementById("datetime");
+      const now = new Date();
+      const date = now.toDateString();
+      const time = now.toLocaleTimeString();
+      // const seconds = now.getSeconds();
+      datetimeElement.textContent = `${date} ${time} `;
+    }
+  
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+  </script>
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
-
       <li><button id="close-btn">Close</button></li>
     </ul>
   </nav>
@@ -83,7 +101,6 @@
       </div>
     </div>
     <div id="code-container" class="code-container"></div>
-    
   </main>
   <script src="script.js"></script>
 </body>
