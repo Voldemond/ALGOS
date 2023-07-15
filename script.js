@@ -80,3 +80,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
   setInterval(updateDateTime, 1000);
   updateDateTime();
+
+  // like button
+  document.getElementById("likeButton").addEventListener("click", function() {
+    // Check if the user has already liked
+    const hasLiked = localStorage.getItem("hasLiked");
+  
+    if (!hasLiked) {
+      // Increment the like count
+      let likeCount = parseInt(localStorage.getItem("likeCount") || 0);
+      likeCount++;
+      localStorage.setItem("likeCount", likeCount);
+  
+      // Set the flag to indicate that the user has liked
+      localStorage.setItem("hasLiked", true);
+  
+      // Update the like count displayed on the webpage
+      document.getElementById("likeCount").textContent = likeCount;
+    }
+  });
+  
