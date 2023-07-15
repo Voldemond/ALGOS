@@ -11,7 +11,7 @@ header {
   align-items: center;
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  padding: 7px;
   text-align: center;
 }
 
@@ -29,8 +29,9 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content:space-between;
+
+  /* align-items: center; */
 }
 
 nav ul li {
@@ -86,7 +87,12 @@ section {
   border-radius: 5px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
-
+#road-map {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -167,11 +173,13 @@ header {
 
 nav {
   background-color: #444;
+
 }
 
 nav ul li a {
   color: #fff;
   background-color: #555;
+  /* margin: 10px; */
 }
 
 nav ul li a:hover {
@@ -232,4 +240,42 @@ header {
   margin: 0;
   color: #333;
 }
+.hidden {
+      display: none;
+}
+/* 
+home page dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
+.dropbtn {
+  background-color: #eee;
+  border: none;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content .dropdown-item {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

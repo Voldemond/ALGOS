@@ -57,5 +57,26 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
 
+ 
+  document.getElementById('toggleButtonintro').addEventListener('click', function() {
+    document.getElementById('in-intro').classList.toggle('hidden');
+  });
+  document.getElementById('toggleButtondsa').addEventListener('click', function() {
+    document.getElementById('in-dsa').classList.toggle('hidden');
+  });
+  document.getElementById('toggleButtonroadmap').addEventListener('click', function() {
+    document.getElementById('in-roadmap').classList.toggle('hidden');
+  });
+  
+  
+  function updateDateTime() {
+    const datetimeElement = document.getElementById("datetime");
+    const now = new Date();
+    const date = now.toDateString();
+    const time = now.toLocaleTimeString();
+    // const seconds = now.getSeconds();
+    datetimeElement.textContent = `${date} ${time} `;
+  }
 
-
+  setInterval(updateDateTime, 1000);
+  updateDateTime();

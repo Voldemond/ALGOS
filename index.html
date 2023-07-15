@@ -6,9 +6,15 @@
   <title>Data Structures by Kunal</title>
   <!-- <link rel="stylesheet" href="styles1.css"> -->
   <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
-  
+  <!-- <style>
+    body {
+      background-image: url('images/R.jpeg');
+    }
+    </style>
+   -->
   <header>
     <div class="logo">
       <img src="images/algo.png" alt="ALGOS Logo">
@@ -19,6 +25,7 @@
     <!-- <button id="like-btn">Like</button>
   <p>Total Likes: <span id="total-likes">0</span></p> -->
     <div id="datetime"></div>
+
   </header>
   <script>
     function updateDateTime() {
@@ -36,7 +43,15 @@
   
   <nav>
     <ul>
-      <li><a href="page1.html">Page 1</a></li>
+      <div class="dropdown">
+        <button class="dropbtn">Pages</button>
+        <div class="dropdown-content">
+          <button class="dropdown-item" onclick="location.href='page1.html'">Page 1</button>
+          <button class="dropdown-item" onclick="location.href='page2.html'">Page 2</button>
+        </div>
+      </div>
+      <!-- <li><a href="page1.html">Page 1</a></li>
+      <li><a href="page2.html">Page 2</a></li> -->
       <li><button id="close-btn"> Close</button></li>
       <!-- Add more pages as needed -->
     </ul>
@@ -44,6 +59,8 @@
   <main>
     <section id="introduction">
       <h2>Data Structures</h2>
+      <button id="toggleButtonintro">Toggle Content</button>
+      <section id="in-intro">
       <p>
         Data structures play a vital role in computer science and programming. They are essential for efficiently storing and organizing data, allowing us to perform various operations and algorithms efficiently.
       </p>
@@ -54,8 +71,11 @@
         Explore the different pages to learn about arrays, linked lists, sorting algorithms, and more. Click on the links in the navigation to navigate through the website and access the content you're interested in.
       </p>
     </section>
+    </section>
     <section id="why-dsa">
       <h2>Why Study Data Structures and Algorithms?</h2>
+      <button id="toggleButtondsa">Toggle Content</button>
+      <section id="in-dsa">
       <p>
         Data structures and algorithms are fundamental concepts in computer science. They are important for problem-solving, efficient program design, and optimizing the performance of software applications.
       </p>
@@ -66,7 +86,79 @@
         By studying data structures and algorithms, you can enhance your problem-solving skills, improve your programming efficiency, and develop a strong foundation in computer science
       </p>
     </section>
+    </section>
+    <section id="road-map">
+
+      <h2>Roadmap of Data Structures and Algorithms</h2>
+      <button id="toggleButtonroadmap">Toggle Content</button>
+      <section id="in-roadmap">
+        <h3>1. Basic Programming Fundamentals:</h3>
+        
+        <p>
+            - Familiarize yourself with a programming language of your choice (e.g., Python, Java, C++).<br>
+            - Learn basic programming concepts like variables, loops, conditionals, and functions.
+        </p>
+
+        <h3>2. Introduction to Data Structures:</h3>
+        <p>
+            - Start with fundamental data structures such as arrays, linked lists, stacks, and queues.<br>
+            - Understand their properties, operations, and time complexity analysis.
+        </p>
+
+        <h3>3. Algorithms and Problem Solving:</h3>
+        <p>
+            - Learn essential algorithms like sorting (e.g., bubble sort, merge sort, quicksort) and searching (e.g., linear search, binary search).<br>
+            - Solve programming problems using these algorithms to enhance your problem-solving skills.
+        </p>
+
+        <h3>4. Tree Data Structures:</h3>
+        <p>
+            - Study binary trees, binary search trees, AVL trees, and B-trees.<br>
+            - Understand tree traversal algorithms (e.g., inorder, preorder, postorder).
+        </p>
+
+        <h3>5. Graph Data Structures:</h3>
+        <p>
+            - Learn about graph representations (e.g., adjacency matrix, adjacency list) and graph traversal algorithms (e.g., depth-first search, breadth-first search).<br>
+            - Study various graph algorithms, including shortest path algorithms (e.g., Dijkstra's algorithm) and minimum spanning tree algorithms (e.g., Prim's algorithm, Kruskal's algorithm).
+        </p>
+
+        <h3>6. Hashing and Hash-Based Data Structures:</h3>
+        <p>
+            - Understand hashing concepts, collision resolution techniques, and hash functions.<br>
+            - Explore hash-based data structures like hash tables and hash maps.
+        </p>
+
+        <h3>7. Advanced Data Structures:</h3>
+        <p>
+            - Study more complex data structures such as heaps, priority queues, and self-balancing trees (e.g., red-black trees, AVL trees).<br>
+            - Learn about advanced concepts like segment trees, trie structures, and disjoint-set data structures.
+        </p>
+
+        <h3>8. Dynamic Programming:</h3>
+        <p>
+            - Familiarize yourself with dynamic programming principles and techniques.<br>
+            - Practice solving problems using dynamic programming approaches to optimize recursive algorithms.
+        </p>
+
+        <h3>9. String Algorithms:</h3>
+        <p>
+            - Learn algorithms for string manipulation, pattern searching (e.g., Knuth-Morris-Pratt algorithm), and string matching (e.g., Rabin-Karp algorithm).
+        </p>
+
+        <h3>10. Advanced Algorithms:</h3>
+        <p>
+            - Dive deeper into more advanced algorithms like divide and conquer, greedy algorithms, and backtracking.<br>
+            - Study algorithmic paradigms like randomized algorithms, approximation algorithms, and parallel algorithms.
+        </p>
+      </section>
+       </section>
   </main>
+
+  <script>
+    
+  </script>
+  
   <script src="script.js"></script>
 </body>
 </html>
