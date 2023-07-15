@@ -43,7 +43,13 @@
   </script>
   <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
+      <div class="dropdown">
+        <button class="dropbtn">Pages</button>
+        <div class="dropdown-content">
+          <button class="dropdown-item" onclick="location.href='index.html'">Home</button>
+          <button class="dropdown-item" onclick="location.href='page2.html'">Page 2</button>
+        </div>
+      </div>
       <li><button id="close-btn">Close</button></li>
     </ul>
   </nav>
