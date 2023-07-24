@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures - Page 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/algo.png" alt="ALGOS Logo">
+            <span class="logo-text">ALGOS</span>
+            <h1>ALGOS</h1>
+        </div>
+        <h1>Language [Java] - Page 3</h1>
+        <div id="datetime"></div>
+    </header>
+    <nav>
+        <ul>
+            <div class="dropdown">
+                <button class="dropbtn">Pages</button>
+                <div class="dropdown-content">
+                    <button class="dropdown-item" onclick="location.href='index.html'">Home</button>
+                    <button class="dropdown-item" onclick="location.href='page2.html'">Page 2</button>
+                    <button class="dropdown-item" onclick="location.href='page3.html'">Page 3</button>
+                </div>
+            </div>
+            <li><button id="close-btn">Close</button></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="introduction">
+            <h2>Language</h2>
+            <button id="toggleButtonintro">Toggle Content</button>
+            <section id="in-intro">
+            <p>
+                A programming language is a formal system designed to communicate instructions to a computer or computing device to perform specific tasks or operations. 
+                It serves as an intermediary between humans and machines, 
+                allowing programmers to write human-readable code that can be executed by a computer.
+            </p>
+            <!-- <p>
+              On this website, you will find information and implementations of various data structures and algorithms. Each page focuses on specific data structures, providing an overview, examples, and programs for better understanding.
+            </p>
+            <p>
+              Explore the different pages to learn about arrays, linked lists, sorting algorithms, and more. Click on the links in the navigation to navigate through the website and access the content you're interested in.
+            </p> -->
+          </section>
+          </section>
+          <!-- <section id="why-dsa">
+            <h2>Why Study Data Structures and Algorithms?</h2>
+            <button id="toggleButtondsa">Toggle Content</button>
+            <section id="in-dsa">
+            <p>
+              Data structures and algorithms are fundamental concepts in computer science. They are important for problem-solving, efficient program design, and optimizing the performance of software applications.
+            </p>
+            <p>
+              Understanding data structures allows you to choose the appropriate structure for your data, optimizing memory usage and improving the efficiency of operations like searching, insertion, and deletion. Algorithms provide methods and techniques for solving problems efficiently, reducing time and resource complexity.
+            </p>
+            <p>
+              By studying data structures and algorithms, you can enhance your problem-solving skills, improve your programming efficiency, and develop a strong foundation in computer science
+            </p>
+          </section>
+          </section>
+          <section id="road-map">
+      
+            <h2>Roadmap of Data Structures and Algorithms</h2>
+            <button id="toggleButtonroadmap">Toggle Content</button>
+            <section id="in-roadmap">
+              <h3>1. Basic Programming Fundamentals:</h3>
+              
+              <p>
+                  - Familiarize yourself with a programming language of your choice (e.g., Python, Java, C++).<br>
+                  - Learn basic programming concepts like variables, loops, conditionals, and functions.
+              </p>
+      
+              <h3>2. Introduction to Data Structures:</h3>
+              <p>
+                  - Start with fundamental data structures such as arrays, linked lists, stacks, and queues.<br>
+                  - Understand their properties, operations, and time complexity analysis.
+              </p>
+      
+              <h3>3. Algorithms and Problem Solving:</h3>
+              <p>
+                  - Learn essential algorithms like sorting (e.g., bubble sort, merge sort, quicksort) and searching (e.g., linear search, binary search).<br>
+                  - Solve programming problems using these algorithms to enhance your problem-solving skills.
+              </p>
+      
+              <h3>4. Tree Data Structures:</h3>
+              <p>
+                  - Study binary trees, binary search trees, AVL trees, and B-trees.<br>
+                  - Understand tree traversal algorithms (e.g., inorder, preorder, postorder).
+              </p>
+      
+              <h3>5. Graph Data Structures:</h3>
+              <p>
+                  - Learn about graph representations (e.g., adjacency matrix, adjacency list) and graph traversal algorithms (e.g., depth-first search, breadth-first search).<br>
+                  - Study various graph algorithms, including shortest path algorithms (e.g., Dijkstra's algorithm) and minimum spanning tree algorithms (e.g., Prim's algorithm, Kruskal's algorithm).
+              </p>
+      
+              <h3>6. Hashing and Hash-Based Data Structures:</h3>
+              <p>
+                  - Understand hashing concepts, collision resolution techniques, and hash functions.<br>
+                  - Explore hash-based data structures like hash tables and hash maps.
+              </p>
+      
+              <h3>7. Advanced Data Structures:</h3>
+              <p>
+                  - Study more complex data structures such as heaps, priority queues, and self-balancing trees (e.g., red-black trees, AVL trees).<br>
+                  - Learn about advanced concepts like segment trees, trie structures, and disjoint-set data structures.
+              </p>
+      
+              <h3>8. Dynamic Programming:</h3>
+              <p>
+                  - Familiarize yourself with dynamic programming principles and techniques.<br>
+                  - Practice solving problems using dynamic programming approaches to optimize recursive algorithms.
+              </p>
+      
+              <h3>9. String Algorithms:</h3>
+              <p>
+                  - Learn algorithms for string manipulation, pattern searching (e.g., Knuth-Morris-Pratt algorithm), and string matching (e.g., Rabin-Karp algorithm).
+              </p>
+      
+              <h3>10. Advanced Algorithms:</h3>
+              <p>
+                  - Dive deeper into more advanced algorithms like divide and conquer, greedy algorithms, and backtracking.<br>
+                  - Study algorithmic paradigms like randomized algorithms, approximation algorithms, and parallel algorithms.
+              </p>
+            </section> -->
+             </section>
+    </main>
+
+    <script>
+        function showCardContent(cardId) {
+            const cardContent = document.getElementById(cardId).innerHTML;
+            const contentContainer = document.getElementById('content-container');
+            contentContainer.innerHTML = `<div class="card-content">${cardContent}</div>`;
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
